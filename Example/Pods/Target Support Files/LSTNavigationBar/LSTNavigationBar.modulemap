@@ -1,0 +1,6 @@
+framework module LSTNavigationBar {
+  umbrella header "LSTNavigationBar-umbrella.h"
+
+  export *
+  module * { export * }
+}

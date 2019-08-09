@@ -1,0 +1,33 @@
+PODS:
+  - FDFullscreenPopGesture (1.1)
+  - LSTCategory (0.1.08081542):
+    - LSTCategory/Code (= 0.1.08081542)
+  - LSTCategory/Code (0.1.08081542)
+  - LSTNavigationBar (0.1.08091524):
+    - FDFullscreenPopGesture
+    - LSTCategory
+    - LSTNavigationBar/Code (= 0.1.08091524)
+  - LSTNavigationBar/Code (0.1.08091524):
+    - FDFullscreenPopGesture
+    - LSTCategory
+
+DEPENDENCIES:
+  - LSTNavigationBar (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - FDFullscreenPopGesture
+    - LSTCategory
+
+EXTERNAL SOURCES:
+  LSTNavigationBar:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
+  LSTCategory: 46dfbe0228f9b18d30ca9bd5f00fb60965162fa9
+  LSTNavigationBar: b573e68f0e46dfd76a08a170da7e17ca1d2628fe
+
+PODFILE CHECKSUM: 7b63c1152bcb61e11d86fb5bf0d7511d745922c1
+
+COCOAPODS: 1.7.2

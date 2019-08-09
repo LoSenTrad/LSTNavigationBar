@@ -8,8 +8,8 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LSTNavigationBar'
-  s.version          = '0.1.0'
-  s.summary          = 'A short description of LSTNavigationBar.'
+  s.version          = '0.1.08091524'
+  s.summary          = 'LSTNavigationBar.'
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,9 +17,7 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!
 
-  s.description      = <<-DESC
-TODO: Add long description of the pod here.
-                       DESC
+  s.description      = 'A short description of LSTNavigationBar'
 
   s.homepage         = 'https://github.com/490790096@qq.com/LSTNavigationBar'
   # s.screenshots     = 'www.example.com/screenshots_1', 'www.example.com/screenshots_2'
@@ -30,7 +28,15 @@ TODO: Add long description of the pod here.
 
   s.ios.deployment_target = '8.0'
 
-  s.source_files = 'LSTNavigationBar/Classes/**/*'
+  #s.source_files = 'LSTNavigationBar/Classes/**/*'
+  
+  s.default_subspec = 'Code'
+  
+  s.subspec 'Code' do |code|
+      code.source_files = 'LSTNavigationBar/Classes/Code/**/*'
+      #core.public_header_files = 'ZFPlayer/Classes/Core/**/*.h'
+      code.frameworks = 'UIKit'
+  end
   
   # s.resource_bundles = {
   #   'LSTNavigationBar' => ['LSTNavigationBar/Assets/*.png']
@@ -39,4 +45,6 @@ TODO: Add long description of the pod here.
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'
   # s.dependency 'AFNetworking', '~> 2.3'
+  s.dependency 'FDFullscreenPopGesture'
+  s.dependency 'LSTCategory'
 end

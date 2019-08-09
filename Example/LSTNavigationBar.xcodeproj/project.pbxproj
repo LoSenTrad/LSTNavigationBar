@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		01247559342322335B6015D3 /* Pods_LSTNavigationBar_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3950769F8D252AFFF359C47B /* Pods_LSTNavigationBar_Tests.framework */; };
 		1DAC4AB8742F029410163AE7 /* Pods_LSTNavigationBar_Example.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3A9C50CFC01151B2655BA369 /* Pods_LSTNavigationBar_Example.framework */; };
+		31828F2522FD58AC009D62C8 /* LSTNavigationBarContentView.m in Sources */ = {isa = PBXBuildFile; fileRef = 31828F2122FD58AB009D62C8 /* LSTNavigationBarContentView.m */; };
+		31828F2622FD58AC009D62C8 /* LSTNavigationBar.m in Sources */ = {isa = PBXBuildFile; fileRef = 31828F2422FD58AC009D62C8 /* LSTNavigationBar.m */; };
 		6003F58E195388D20070C39A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58D195388D20070C39A /* Foundation.framework */; };
 		6003F590195388D20070C39A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F58F195388D20070C39A /* CoreGraphics.framework */; };
 		6003F592195388D20070C39A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6003F591195388D20070C39A /* UIKit.framework */; };
@@ -38,6 +40,10 @@
 
 /* Begin PBXFileReference section */
 		1E9E0C9D065A3448729AED8F /* Pods-LSTNavigationBar_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSTNavigationBar_Tests.debug.xcconfig"; path = "Target Support Files/Pods-LSTNavigationBar_Tests/Pods-LSTNavigationBar_Tests.debug.xcconfig"; sourceTree = "<group>"; };
+		31828F2122FD58AB009D62C8 /* LSTNavigationBarContentView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTNavigationBarContentView.m; sourceTree = "<group>"; };
+		31828F2222FD58AB009D62C8 /* LSTNavigationBarContentView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTNavigationBarContentView.h; sourceTree = "<group>"; };
+		31828F2322FD58AC009D62C8 /* LSTNavigationBar.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LSTNavigationBar.h; sourceTree = "<group>"; };
+		31828F2422FD58AC009D62C8 /* LSTNavigationBar.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LSTNavigationBar.m; sourceTree = "<group>"; };
 		3950769F8D252AFFF359C47B /* Pods_LSTNavigationBar_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSTNavigationBar_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3A9C50CFC01151B2655BA369 /* Pods_LSTNavigationBar_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LSTNavigationBar_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C5A45102815CC8EEE1F94EF /* Pods-LSTNavigationBar_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSTNavigationBar_Tests.release.xcconfig"; path = "Target Support Files/Pods-LSTNavigationBar_Tests/Pods-LSTNavigationBar_Tests.release.xcconfig"; sourceTree = "<group>"; };
@@ -62,10 +68,10 @@
 		6003F5BB195388D20070C39A /* Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tests.m; sourceTree = "<group>"; };
 		606FC2411953D9B200FFA9A0 /* Tests-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Tests-Prefix.pch"; sourceTree = "<group>"; };
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
-		74062F52EC86D240035F9348 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		74062F52EC86D240035F9348 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		BCD00CB36E92AD21BDA39CDC /* LSTNavigationBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = LSTNavigationBar.podspec; path = ../LSTNavigationBar.podspec; sourceTree = "<group>"; };
-		D8D41A79DA505670E4302A84 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BCD00CB36E92AD21BDA39CDC /* LSTNavigationBar.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LSTNavigationBar.podspec; path = ../LSTNavigationBar.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		D8D41A79DA505670E4302A84 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		E0B6359450DC258C5F12CEA0 /* Pods-LSTNavigationBar_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LSTNavigationBar_Example.debug.xcconfig"; path = "Target Support Files/Pods-LSTNavigationBar_Example/Pods-LSTNavigationBar_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -95,6 +101,18 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		31828F2022FD5894009D62C8 /* Code */ = {
+			isa = PBXGroup;
+			children = (
+				31828F2322FD58AC009D62C8 /* LSTNavigationBar.h */,
+				31828F2422FD58AC009D62C8 /* LSTNavigationBar.m */,
+				31828F2222FD58AB009D62C8 /* LSTNavigationBarContentView.h */,
+				31828F2122FD58AB009D62C8 /* LSTNavigationBarContentView.m */,
+			);
+			name = Code;
+			path = ../../LSTNavigationBar/Classes/Code;
+			sourceTree = "<group>";
+		};
 		6003F581195388D10070C39A = {
 			isa = PBXGroup;
 			children = (
@@ -132,6 +150,7 @@
 		6003F593195388D20070C39A /* Example for LSTNavigationBar */ = {
 			isa = PBXGroup;
 			children = (
+				31828F2022FD5894009D62C8 /* Code */,
 				6003F59C195388D20070C39A /* LSTAppDelegate.h */,
 				6003F59D195388D20070C39A /* LSTAppDelegate.m */,
 				873B8AEA1B1F5CCA007FD442 /* Main.storyboard */,
@@ -193,7 +212,6 @@
 				1E9E0C9D065A3448729AED8F /* Pods-LSTNavigationBar_Tests.debug.xcconfig */,
 				3C5A45102815CC8EEE1F94EF /* Pods-LSTNavigationBar_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -248,6 +266,9 @@
 				LastUpgradeCheck = 0720;
 				ORGANIZATIONNAME = "490790096@qq.com";
 				TargetAttributes = {
+					6003F589195388D20070C39A = {
+						DevelopmentTeam = F8DZH6Y62F;
+					};
 					6003F5AD195388D20070C39A = {
 						TestTargetID = 6003F589195388D20070C39A;
 					};
@@ -258,6 +279,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -324,10 +346,14 @@
 			);
 			inputPaths = (
 				"${PODS_ROOT}/Target Support Files/Pods-LSTNavigationBar_Example/Pods-LSTNavigationBar_Example-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/FDFullscreenPopGesture/FDFullscreenPopGesture.framework",
+				"${BUILT_PRODUCTS_DIR}/LSTCategory/LSTCategory.framework",
 				"${BUILT_PRODUCTS_DIR}/LSTNavigationBar/LSTNavigationBar.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/FDFullscreenPopGesture.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSTCategory.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/LSTNavigationBar.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -366,6 +392,8 @@
 			files = (
 				6003F59E195388D20070C39A /* LSTAppDelegate.m in Sources */,
 				6003F5A7195388D20070C39A /* LSTViewController.m in Sources */,
+				31828F2622FD58AC009D62C8 /* LSTNavigationBar.m in Sources */,
+				31828F2522FD58AC009D62C8 /* LSTNavigationBarContentView.m in Sources */,
 				6003F59A195388D20070C39A /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -494,6 +522,7 @@
 			baseConfigurationReference = E0B6359450DC258C5F12CEA0 /* Pods-LSTNavigationBar_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F8DZH6Y62F;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LSTNavigationBar/LSTNavigationBar-Prefix.pch";
 				INFOPLIST_FILE = "LSTNavigationBar/LSTNavigationBar-Info.plist";
@@ -510,6 +539,7 @@
 			baseConfigurationReference = 5315C5D2869DFD94C62888C1 /* Pods-LSTNavigationBar_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				DEVELOPMENT_TEAM = F8DZH6Y62F;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "LSTNavigationBar/LSTNavigationBar-Prefix.pch";
 				INFOPLIST_FILE = "LSTNavigationBar/LSTNavigationBar-Info.plist";
