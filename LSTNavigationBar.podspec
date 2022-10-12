@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LSTNavigationBar'
-  s.version          = '0.1.08101147'
+  s.version          = '0.1.10121041'
   s.summary          = 'LSTNavigationBar.'
 
 # This description is used to generate tags and improve search results.

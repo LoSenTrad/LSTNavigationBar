@@ -456,6 +456,8 @@ const CGFloat LSTNavigationBarIPhoneXFixedSpaceWidth = 56.f;
         if (self.view.subviews.lastObject != self.lst_navigationBar) {
             [self.view bringSubviewToFront:self.lst_navigationBar];
         }
+        
+        [self.lst_navigationBar lst_layoutIfNeeded];
     }
 }
 
