@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = 'LSTNavigationBar'
-  s.version          = '0.1.104'
+  s.version          = '0.1.105'
   s.summary          = 'iOS通用导航栏组件'
 
 # This description is used to generate tags and improve search results.
