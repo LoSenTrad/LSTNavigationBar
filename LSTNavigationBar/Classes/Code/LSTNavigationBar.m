@@ -173,6 +173,12 @@ const CGFloat LSTNavigationBarIPhoneXFixedSpaceWidth = 56.f;
         contentFrame.origin.x = LSTNavigationBarIPhoneXFixedSpaceWidth;
         contentFrame.size.width = LSTNavigationBarScreenWidth - LSTNavigationBarIPhoneXFixedSpaceWidth * 2;
     }
+    
+    contentFrame.origin.x = _LeftSpacing;
+        
+    contentFrame.size.width = LSTNavigationBarScreenWidth - (_rightSpacing+_LeftSpacing);
+    
+    
     self.navigationItem.contentView.frame = contentFrame;
     
     self.largeTitleView.frame = CGRectMake(0, CGRectGetMaxY(contentFrame), CGRectGetWidth(self.frame), largeTitleViewHeight);
@@ -283,6 +289,16 @@ const CGFloat LSTNavigationBarIPhoneXFixedSpaceWidth = 56.f;
 - (void)setVerticalOffset:(CGFloat)verticalOffset {
     _verticalOffset = verticalOffset < 0.f ? verticalOffset : 0.f;
     
+    [self lst_layoutIfNeeded];
+}
+
+- (void)setLeftSpacing:(CGFloat)LeftSpacing {
+    _LeftSpacing = LeftSpacing > 0 ?  LeftSpacing : 0;
+    [self lst_layoutIfNeeded];
+}
+
+- (void)setRightSpacing:(CGFloat)rightSpacing {
+    _rightSpacing = rightSpacing > 0 ?  rightSpacing : 0;
     [self lst_layoutIfNeeded];
 }
 

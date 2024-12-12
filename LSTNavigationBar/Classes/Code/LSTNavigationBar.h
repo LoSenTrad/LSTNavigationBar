@@ -46,6 +46,11 @@
 
 @property (nonatomic, assign) CGFloat verticalOffset; // 导航栏垂直位置偏移量
 
+/// 左间距 默认0 大于0生效
+@property (nonatomic, assign) CGFloat LeftSpacing;
+/// 右间距 默认0 大于0生效
+@property (nonatomic, assign) CGFloat rightSpacing;
+
 - (void)setHidden:(BOOL)hidden animated:(BOOL)animated; // 隐藏或显示导航栏，如果animated=YES，将开启动画效果
 
 @end
